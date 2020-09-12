@@ -1,6 +1,6 @@
 # Kong Admin URL
 # @required
-kong_admin_url: http://192.168.1.182:8001
+kong_admin_url: http://youradminapi
 
 # Kong Admin Token
 # @optional

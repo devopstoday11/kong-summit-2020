@@ -1,0 +1,4 @@
+kong-addr: http://youradminapi
+headers:
+  - "Kong-Admin-Token:third-workspace-admin-123456"
+skip-workspace-crud: true

@@ -1,0 +1,28 @@
+_format_version: "1.1"
+_workspace: first-workspace
+routes:
+  - name: yolo
+    methods:
+      - GET
+      - HEAD
+    paths:
+      - /yolo
+    path_handling: v1
+    preserve_host: false
+    protocols:
+      - http
+      - https
+    regex_priority: 0
+    strip_path: false
+    https_redirect_status_code: 426
+    plugins:
+      - name: request-termination
+        config:
+          body: null
+          content_type: null
+          message: you only live once
+          status_code: 200
+        enabled: true
+        protocols:
+          - http
+          - https
